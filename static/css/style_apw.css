@@ -97,9 +97,10 @@ h5 .sub {
     display: none;
 }
 .inner {
-    width: 80%;
-    margin: 0 auto 0 10%;
-    padding-bottom: 50px;
+    max-width: 1040px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px 50px;
 }
 @media only screen and (min-width: 800px) {
     #sns {
