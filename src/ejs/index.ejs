@@ -1,49 +1,48 @@
 <%- include ('components/_header') %>
-<!-- <div id="splash"><img src="/assets/img/splash.jpg" width="100%" alt="RECRUIT" onClick="goContents()"></div> -->
+<!-- <div id="splash"><img src="/images/splash.jpg" width="100%" alt="RECRUIT" onClick="goContents()"></div> -->
 <!-- <div id="wrapper" style="display: none;"> -->
 <div id="wrapper">
-    <!-- <div id="sidebar">
-			<div id="sidebarWrap">
-				<h1><img src="/assets/img/logo.png" width="100%" alt="logo"></h1>
-				<nav id="mainnav">
-					<p id="menuWrap"><a id="menu"><span id="menuBtn"></span></a></p>
-					<div class="panel">
-						<ul>
-							<li class="subTi ryumin">Recruit Site</li>
-							<li><a href="#top">TOP</a></li>
-							<li><a href="#VOICE">STAFF VOICE</a></li>
-							<li><a href="#DAY">the Day</a></li>
-							<li><a href="#JOB">JOB</a></li>
-							<li><a href="#RECRUIT">Recruitment</a></li>
-							<li><a href="#QA">Q & A</a></li>
-							<li><a href="#APPLY">Apply</a></li>
-							<li><a href="//1jour.jp/">Main Homepage</a></li>
-						</ul>
-						<ul id="sns">
-							<li><a href="//lin.ee/U0RCX0w" target="_blank"><img src="/assets/img/ico_line.png" width="30" height="30" alt="LINE"></a></li>
-							<li><a href="//www.instagram.com/1jour_hairworks_ishii/" target="_blank"><img src="/assets/img/ico_insta.png"  width="30" height="30" alt="Instagram"></a></li>
-							<li><a href="//1jour.jp/" target="_blank"><img src="/assets/img/ico_1jour.png" width="30" height="30" alt="Main Homepage"></a></li>
-						</ul>
-					</div>
-				</nav>
-			</div>
-		</div> -->
     <div id="content">
         <p id="mainImg">
-            <img src="/assets/img/main_r1.jpg" alt="大人女子専門ヘアサロン" />
+            <img src="/images/main_r1.jpg" alt="大人女子専門ヘアサロン" />
         </p>
-
+        <!-- INDEX -->
+        <div id="index_block">
+            <div class="index_block__inner">
+                <ul class="index_block__list">
+                    <li class="index_block__item">
+                        <a href="#VOICE">STAFF VOICE</a>
+                    </li>
+                    <li class="index_block__item">
+                        <a href="#DAY">the Day</a>
+                    </li>
+                    <li class="index_block__item">
+                        <a href="#RECRUIT">Recruitment</a>
+                    </li>
+                    <li class="index_block__item">
+                        <a href="#QA">Q & A</a>
+                    </li>
+                    <li class="index_block__item">
+                        <a href="#APPLY">Apply</a>
+                    </li>
+                </ul>
+                <div class="index_block__line">
+                    <a href=""><span>応募・お問い合わせはこちらから</span> </a>
+                </div>
+            </div>
+        </div>
+        <!-- //INDEX -->
         <!-- INTRO -->
         <section id="INTRO">
             <div class="inner">
                 <div class="article">
                     <h2>1//jourはオトナ女性のためのサロンです。</h2>
                     <img
-                        src="/assets/img/about.jpg"
+                        src="/images/about.jpg"
                         alt="1//jourはオトナ女性のためのサロンです。"
                         class="showPc"
                     /><img
-                        src="/assets/img/about_sp1.jpg"
+                        src="/images/about_sp1.jpg"
                         alt="1//jourはオトナ女性のためのサロンです。"
                         class="showSp"
                     />
@@ -55,7 +54,7 @@
                             1//jourでは、特に３０代４０代の女性美容師さんに働きやすい環境を用意しています。<br />結婚や出産、育児や親の介護、自分自身の体調の変化など変化が起きやすい女性のライフスタイルに合わせ働きやすい環境を用意します。
                         </p>
                         <img
-                            src="/assets/img/about_sp2.jpg"
+                            src="/images/about_sp2.jpg"
                             alt="1//jourはオトナ女性のためのサロンです。"
                             class="showSp"
                         />
@@ -84,18 +83,28 @@
                             />活躍できる環境で美容師人生を楽しんで続けて欲しいです。
                         </p>
 
-                        <div class="job">
-                            <ul>
-                                <li>
-                                    社会保険完備　20万(2年間25万保証）プラス歩合
-                                    週休２日（土日どちらかOK）
+                        <div class="job_block">
+                            <ul class="job_block__list">
+                                <li
+                                    class="job_block__item job_block__item--blue"
+                                >
+                                    イベント<br />時間外なし
                                 </li>
-                                <li>18時～19時帰宅</li>
-                                <li>ノルマなし</li>
-                                <li>お客様とマンツーマン</li>
-                                <li>時間外のミーティング・練習会ナシ</li>
-                                <li>主婦ママさんスタッフが８割</li>
-                                <li>スタッフ平均年齢３５歳</li>
+                                <li
+                                    class="job_block__item job_block__item--yellow"
+                                >
+                                    ブランク<br />OK
+                                </li>
+                                <li
+                                    class="job_block__item job_block__item--pink"
+                                >
+                                    ママ美容師<br />応援サロン
+                                </li>
+                                <li
+                                    class="job_block__item job_block__item--purple"
+                                >
+                                    美容師としての<br />やりがい
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -116,99 +125,185 @@
                 <div class="article line">
                     <h5>
                         木村さんインタビュー<span class="sub"
-                            >ー入社１4年目/３０代/正社員ー</span
+                            >ー入社14年目/30代/正社員ー</span
                         >
                     </h5>
-                    <video
-                        controls
-                        src="/assets/img/1215-kimura.mp4"
-                        type="video/mp4"
-                        muted
-                        playsinline
-                    ></video>
-                    <h4>入社しようと思ったきっかっけや理由は何ですか？</h4>
-                    <p>
-                        私が入社しようと思ったきっかけは、色々と見学した中で<br
-                            class="ifpc"
-                        />１番良いサロンだなと思ったからです。
-                    </p>
-                    <h4>
-                        入社して長く働いてくれていますが<br
-                            class="ifpc"
-                        />長く働けている理由とかありますか？
-                    </h4>
-                    <p>
-                        うちのお店は小さなサロンなのですが皆さん距離感が良く、付かず離れずのちょうど良い距離感なので皆の雰囲気が好きで長く働けていると思います。<br
-                            class="ifpc"
-                        />でも、しっかり話したい時は時間も取ってくれるので私に取って良い環境だと思います。
-                    </p>
-                    <h4>
-                        入社以降だいぶ待遇面で改善できてきたと思いますがどう感じていますか？
-                    </h4>
-                    <p>
-                        時代に合わせた働き方を改善しながら作ってもらっているので<br
-                            class="ifpc"
-                        />はたらきやすいと思っています。
-                    </p>
-                    <h4>１//Jourにはどんなお客様が多いですか？</h4>
-                    <p>
-                        同世代から少し上のお客様が多いイメージがあります。<br
-                            class="ifpc"
-                        />皆様カラーやスタイルなど新しいものが好きで興味がある方が多いので、<br
-                            class="ifpc"
-                        />すごく意識が高い方が多く感じます。
-                    </p>
-                    <h4>
-                        今後働いてみたいなと思って下さる方に一言お願いします。
-                    </h4>
-                    <p>
-                        少しでも興味を持って頂けたら話だけでも<br />聞きに来てもらいたいと思います。
-                    </p>
+                    <div class="VOICE__contents">
+                        <video
+                            controls
+                            src="/images/1215-kimura.mp4"
+                            type="video/mp4"
+                            muted
+                            playsinline
+                            poster="/images/pic_staff01.jpg"
+                        ></video>
+                        <div class="VOICE__texts">
+                            <h4>
+                                《有休も好きな時の取れるので安く海外旅行に》
+                            </h4>
+                            <p>
+                                「小さなサロンですが、スタッフ同士の距離感が居心地良く働きやすいのが気に入ってます」<br />
+                                休みや労働時間など、常に働きやすい環境に改善してくれているのが嬉しいです。
+                            </p>
+                            <ul class="VOICE__list">
+                                <li class="VOICE__item">
+                                    <span>[お休み]</span>週休２日制
+                                </li>
+                                <li class="VOICE__item">
+                                    <span>[勤務時間]</span>フレックス
+                                </li>
+                                <li class="VOICE__item">
+                                    <span>[１日の担当]</span>５〜6人
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="article">
                     <h5>
                         浅香さんインタビュー<span class="sub"
-                            >ー入社8年目/４０代/正社員ー</span
+                            >ー入社8年目/40代/正社員ー</span
                         >
                     </h5>
-                    <video
-                        controls
-                        src="/assets/img/1215-asaka.mp4"
-                        type="video/mp4"
-                        muted
-                        playsinline
-                    ></video>
-                    <h4>入社しようと思ったきっかっけや理由は何ですか？</h4>
-                    <p>
-                        一時期、事務職に就いていたのですがやっぱり美容師に戻りたいと思い探した所ブランクがあっても良いとの事だったので面接に伺いました。
-                    </p>
-                    <h4>実際に働いてみてどうですか？</h4>
-                    <p>
-                        みなさん親切ですし、土日のお休みや子供の都合での休みも取りやすいのでとても働きやすいです。
-                    </p>
-                    <h4>
-                        今年、パートから正社員になりましたが収入面やプライベートの時間に変化はありましたか？
-                    </h4>
-                    <p>
-                        収入面は結構ふえましたし、夏休みや有給休暇もあるので休めますし<br
-                            class="ifpc"
-                        />収入も安定しているので安心です。
-                    </p>
-                    <h4>１//Jourにはどんなお客様が多いですか？</h4>
-                    <p>
-                        幅広くいらしてますが、同世代のお客様が多いので話しやすいですし<br
-                            class="ifpc"
-                        />悩みも共感できるので私としてもやりやすいお客様が多いです。
-                    </p>
-                    <h4>
-                        今後働いてみたいなと思って下さる方に一言お願いします。
-                    </h4>
-                    <p>
-                        お休みの希望も聞いてくれますし子育てや家庭と両立したい方にピッタリな職場<br
-                            class="ifpc"
-                        />だと思います。アットホームな職場なので、ぜひ一緒に働けたらと思います。
-                    </p>
+                    <div class="VOICE__contents">
+                        <video
+                            controls
+                            src="/images/1215-asaka.mp4"
+                            type="video/mp4"
+                            muted
+                            playsinline
+                            poster="/images/pic_staff02.jpg"
+                        ></video>
+                        <div class="VOICE__texts">
+                            <h4>《子供の成長に合わせ社員転換しました》</h4>
+                            <p>
+                                ブランクありでパート復帰、その後に子ドミノ成長に合わせ社員転換しました。土日も子<br />
+                                供の都合だけでなく自分の楽しみで休みも取りやすく働きやすいです。
+                            </p>
+                            <ul class="VOICE__list">
+                                <li class="VOICE__item">
+                                    <span>[お休み]</span>週休２日制
+                                </li>
+                                <li class="VOICE__item">
+                                    <span>[勤務時間]</span>9:00〜17:00
+                                </li>
+                                <li class="VOICE__item">
+                                    <span>[１日の担当]</span>３〜5人
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article">
+                    <h5>
+                        重吉さんインタビュー<span class="sub"
+                            >ー40代/パートー</span
+                        >
+                    </h5>
+                    <div class="VOICE__contents">
+                        <video
+                            controls
+                            src="/images/1215-asaka.mp4"
+                            type="video/mp4"
+                            muted
+                            playsinline
+                            poster="/images/pic_staff03.jpg"
+                        ></video>
+                        <div class="VOICE__texts">
+                            <h4>《ママ美容師にも働きやすい環境です》</h4>
+                            <p>
+                                都心シェアサロンから子育てのために転職しました。マンツーマンで美容師としてのこだわりの仕事をしながら子供達との時間も作れ充実しています。
+                            </p>
+                            <ul class="VOICE__list">
+                                <li class="VOICE__item">
+                                    <span>[お休み]</span
+                                    >毎週火曜日・隔週土日休み
+                                </li>
+                                <li class="VOICE__item">
+                                    <span>[勤務時間]</span>９:00〜16:00
+                                </li>
+                                <li class="VOICE__item">
+                                    <span>[１日の担当]</span>３〜4人
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article">
+                    <h5>
+                        齋藤さんインタビュー<span class="sub"
+                            >ー30代/パートー</span
+                        >
+                    </h5>
+                    <div class="VOICE__contents">
+                        <video
+                            controls
+                            src="/images/1215-asaka.mp4"
+                            type="video/mp4"
+                            muted
+                            playsinline
+                            poster="/images/pic_staff04.jpg"
+                        ></video>
+                        <div class="VOICE__texts">
+                            <h4>《急な休みも対応してもらってます》</h4>
+                            <p>
+                                産後に委託サロンで働いていましたが、子供の体調不良などの急な休みなどに対応してもらえず転職しました。ここは柔軟に対応してくれるので続けられてます。<br />
+                                営業内に講習会があるのでパートとしても助かります。
+                            </p>
+                            <ul class="VOICE__list">
+                                <li class="VOICE__item">
+                                    <span>[出勤日数]</span>週４日
+                                </li>
+                                <li class="VOICE__item">
+                                    <span>[勤務時間]</span>10:00〜15:00
+                                </li>
+                                <li class="VOICE__item">
+                                    <span>[１日の担当]</span>2〜3人
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article">
+                    <h5>
+                        小高さんインタビュー<span class="sub"
+                            >ー40代/社員ー</span
+                        >
+                    </h5>
+                    <div class="VOICE__contents">
+                        <video
+                            controls
+                            src="/images/1215-asaka.mp4"
+                            type="video/mp4"
+                            muted
+                            playsinline
+                            poster="/images/pic_staff05.jpg"
+                        ></video>
+                        <div class="VOICE__texts">
+                            <h4>
+                                《将来の不安から他業種に、そして美容師復帰》
+                            </h4>
+                            <p>
+                                管理職に就き、時間拘束や体力的な辛さなどで美容師を辞めましたが復帰。<br />
+                                今は時間に追われずに仕事ができ、スタッフやお客様との年齢も近く働きやすいです。休みも自由に取れるのでプライベートも充実しています。
+                            </p>
+                            <ul class="VOICE__list">
+                                <li class="VOICE__item">
+                                    <span>[お休み]</span>週休２日
+                                </li>
+                                <li class="VOICE__item">
+                                    <span>[勤務時間]</span>9:00〜17:00
+                                </li>
+                                <li class="VOICE__item">
+                                    <span>[１日の担当]</span>3〜4人
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -219,99 +314,73 @@
             <div class="inner">
                 <header>
                     <h2>
-                        the Day<span class="sub">ある正社員の1日の流れ</span>
+                        the Day<span class="sub"
+                            >jourでの１日の流れ（正社員）</span
+                        >
                     </h2>
                 </header>
                 <ul class="col3">
                     <li>
-                        <p class="ti">９:３０出勤・清掃・オープン準備</p>
+                        <p class="ti">8:45 出勤・清掃・オープン準備</p>
                         <p class="img">
                             <img
-                                src="/assets/img/day1.jpg"
-                                alt="９:３０出勤・清掃・オープン準備"
+                                src="/images/day1.jpg"
+                                alt="8:45 出勤・清掃・オープン準備"
                             />
                         </p>
                         <p>
-                            出勤して簡単な清掃を行いオープン準備をします。朝礼はありません。
+                            お客様を迎える簡単な清掃、個室店は自分の個室内を中心に清掃をします。朝礼などはないので保育園に送った後でも十分間に合います。
                         </p>
                     </li>
                     <li>
-                        <p class="ti">10:00 営業開始</p>
+                        <p class="ti">9:00 営業開始</p>
                         <p class="img">
-                            <img
-                                src="/assets/img/day2.jpg"
-                                alt="10:00 営業開始"
-                            />
+                            <img src="/images/day2.jpg" alt="9:00 営業開始" />
                         </p>
                         <p>
-                            ご予約のお客様を順番に施術していきます。予約時間などは自分で決められるので無理な入客やノルマはないのでお客様に集中できます。
+                            ご予約のお客様を順番に施術していきます。予約時間は自分で決められるので無理な入客やノルマはありません。平日で２〜3名、土日祝で４〜５名のお客様を担当することが多いです。
                         </p>
                     </li>
                     <li>
-                        <p class="ti">13:00 休憩、昼飯</p>
+                        <p class="ti">12:00 休憩・昼食</p>
                         <p class="img">
                             <img
-                                src="/assets/img/day3.jpg"
-                                alt="13:00 休憩、昼飯"
+                                src="/images/day3.jpg"
+                                alt="12:00 休憩・昼食"
                             />
                         </p>
                         <p>
-                            手が空いているときは都度休憩が出来ますコーヒーを飲んだりスタッフとお喋りしたりリフレッシュしてください。
+                            手の空いている時は都度の休憩ができます。昼食を摂ったりスタッフ同士でお喋りしたりレフレッシュして下さい。
                         </p>
                     </li>
                     <li>
-                        <p class="ti">17:30 閉店準備清掃</p>
+                        <p class="ti">16:30 閉店準備清掃</p>
                         <p class="img">
                             <img
-                                src="/assets/img/day4.jpg"
-                                alt="17:30 閉店準備清掃"
+                                src="/images/day4.jpg"
+                                alt="16:30 閉店準備清掃"
                             />
                         </p>
                         <p>
-                            18時の時点でご予約がない場合は帰宅できるので清掃を始めていきます。
+                            17時の時点でご予約がないスタッフは帰宅出来るので自分の使ったセット面や担当の清掃部分を中心に清掃を始めていきます。
                         </p>
                     </li>
                     <li>
-                        <p class="ti">18:00〜19:00 退勤、営業終了</p>
+                        <p class="ti">17:00〜18：退勤・営業終了</p>
                         <p class="img">
                             <img
-                                src="/assets/img/day5.jpg"
-                                alt="18:00〜19:00 退勤、営業終了"
+                                src="/images/day5.jpg"
+                                alt="17:00〜18：退勤・営業終了"
                             />
                         </p>
                         <p>
-                            遅くても１９時には帰宅しています。<br />今日も１日お疲れさまでした。
+                            ほぼ18時に全員帰宅しています。１８時前に帰れる事も多いので家族との夕食、自分のケアなどプライベートを楽しんで下さい。今日も１日お疲れ様でした。
                         </p>
                     </li>
                 </ul>
             </div>
         </section>
         <!-- // DAY -->
-        <!-- JOB -->
-        <section id="JOB">
-            <div class="inner">
-                <header>
-                    <h2>JOB<span class="sub">仕事内容</span></h2>
-                </header>
-                <div class="article">
-                    <h4>1日の入客数</h4>
-                    <p>
-                        ３～８人のお客様を担当することが多いです。<br />入社が決まり次第すぐに集客サイトプランアップや個人の限定クーポンなどを作り入客のバックアップをします。
-                    </p>
-                    <h4>客単価</h4>
-                    <p>12.000円前後</p>
-                    <h4>ノルマなど</h4>
-                    <p>
-                        1//Jourでは技術売上・商品売上ともにノルマや目標は課しません。<br />技術売上や再来店率などが著しく低い場合はカウンセリングなどの見直しはしますがしっかりサポートしますので安心してください。商品売上げについては、お客様への商品売込みは禁止しています。無理な販売をさせたり、スタッフに購入する様勧めることはありません。
-                    </p>
-                    <h4>接客、技術について</h4>
-                    <p>
-                        １//Jourでは接客・カウンセリングにはマニュアルを作成しています。マニュアルと言ってもスタイリスト経験がある方でしたらすぐに覚えて頂けるものです。いづれも１カ月程度で覚えてもらえるものなのでブランクがある方でも安心です。
-                    </p>
-                </div>
-            </div>
-        </section>
-        <!-- // JOB -->
 
         <!-- RECRUIT -->
         <section id="RECRUIT">
@@ -325,8 +394,8 @@
                         <td>
                             <ul>
                                 <li>
-                                    スタイリスト歴３年以上の方
-                                    ブランクがあっても大丈夫です<br />（現在アシスタントの雇用は行っておりません）
+                                    スタイリスト1年以上の方（ブランクがあっても大丈夫です）<br />
+                                    ※アシスタントの雇用は現在行なっておりません。
                                 </li>
                                 <li>要美容師免許</li>
                             </ul>
@@ -338,15 +407,46 @@
                             ＜正社員＞
                             <ul>
                                 <li>
-                                    基本給　２0万（2年間25万保証）経験や能力により考慮します。<br />プラス技術売上の歩合<br />詳細はサロン見学の際にお話しします。
+                                    基本給20万（１年間・保証給25万）試用期間６ヶ月
+                                </li>
+                                <li>
+                                    歩合　技術売上から規定に沿って支給・実質40％
+                                </li>
+                                <li>
+                                    30代半ばスタイリスト　給与45〜50万（総支給）
+                                </li>
+                                <li>
+                                    40代前半スタイリスト　入社２ヶ月　34万（総支給）
                                 </li>
                             </ul>
+                            <!-- <div class="line"></div>
+                            ＜2023年度給与例＞
+                            <ul>
+                                <li>
+                                    30代半ばスタイリスト　給与45〜50万（総支給）
+                                </li>
+                                <li>
+                                    40代前半スタイリスト　入社２ヶ月　34万（総支給）
+                                </li>
+                            </ul>
+                            <div class="line"></div>
+                            ＜時短正社員＞
+                            <ul>
+                                <li>基本給</li>
+                                <li>時短A（17時まで）20万</li>
+                                <li>時短B（16時まで）18万</li>
+                                <li>時短C（15時まで）15万</li>
+                                <li>
+                                    規定以上で歩合が付きます。（試用期間６ヶ月）
+                                </li>
+                            </ul> -->
                             <div class="line"></div>
                             ＜パート＞
                             <ul>
                                 <li>
-                                    時給1.300～1.700円（平日・土日一律）技術売上・時間生産性により昇給<br />詳細はサロン見学の際にお話しします。
+                                    1,300〜2,000円（平日・土日一律）技術売上により昇給
                                 </li>
+                                <li>試用期間６ヶ月</li>
                             </ul>
                         </td>
                     </tr>
@@ -356,15 +456,47 @@
                             ＜正社員＞
                             <ul>
                                 <li>
-                                    週休二日制　火曜日定休＋１日（土日祝も可）<br />営業時間　9時～19時<br />（8時45分出勤、18:00最終受付）<br />勤務時間　A:9:00～17:00　B:10:00～18:00　どちらか選べます。
+                                    完全週休２日制　毎週火曜日＋１日（土日祝も可）<br />営業時間　９:00〜18:00<br />８:45出勤・17:00の時点で予約がなければ帰宅できます。
                                 </li>
                             </ul>
                             <div class="line"></div>
                             ＜パート＞
                             <ul>
                                 <li>
-                                    週3日～、5時間程度（相談応）<br />勤務日数・時間によっては社会保険加入できます。<br />時間外でのミーティング・講習会はありません。
+                                    週４〜、５時間〜（９時〜17時の間で選べます）
                                 </li>
+                                <li>扶養内でなどご相談下さい</li>
+                                <li>規定クリアで社保加入出来ます</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>勤務外時間</th>
+                        <td>
+                            <ul>
+                                <li>
+                                    時間外でのミーティング・練習会・講習会はありません。
+                                </li>
+                                <li>
+                                    やむ得ない場合の時間外の場合は、社員・パートともに時間外時給が発生します。
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>その他の待遇</th>
+                        <td>
+                            <ul>
+                                <li>皆勤手当10,000円</li>
+                                <li>
+                                    社会保険完備（試用期間中から加入出来ます）
+                                </li>
+                                <li>写真（施術したお客様）買取手当</li>
+                                <li>回数券販売50％還元</li>
+                                <li>
+                                    有給休暇（規定クリアでパートも取得できます）
+                                </li>
+                                <li>交通費15,000円まで</li>
                             </ul>
                         </td>
                     </tr>
@@ -372,6 +504,85 @@
             </div>
         </section>
         <!-- // RECRUIT -->
+
+        <!-- FLOW -->
+        <section id="FLOW">
+            <div class="inner">
+                <header>
+                    <h2>Flow<span class="sub">採用までの流れ</span></h2>
+                </header>
+                <div class="flow_block">
+                    <div class="flow_block__list">
+                        <div class="flow_item">
+                            <div class="flow_item__img">
+                                <img
+                                    src="/images/location_asaka.jpg"
+                                    alt="美容室の外観"
+                                />
+                            </div>
+                            <p class="flow_item__title">1.見学とサロン説明</p>
+                            <p class="flow_item__text">
+                                このページの<a href="/">LINE</a
+                                >よりお問い合わせ下さい。<br />
+                                ご希望サロンの見学と説明をさせて頂きます（即時面接はしていないので気軽にどうぞ）
+                            </p>
+                        </div>
+                        <div class="flow_item">
+                            <div class="flow_item__img">
+                                <img
+                                    src="/images/pic_flow_item02.jpg"
+                                    alt="美容室の外観"
+                                />
+                            </div>
+                            <p class="flow_item__title">2.面接</p>
+                            <p class="flow_item__text">
+                                見学と説明を受けて面接に進みたい方は、後日に改めて面接させて頂きます。<br />
+                                履歴書（写真添付）はこの時にご持参ください。
+                            </p>
+                        </div>
+                        <div class="flow_item">
+                            <div class="flow_item__img">
+                                <img
+                                    src="/images/pic_flow_item03.jpg"
+                                    alt="美容室の外観"
+                                />
+                            </div>
+                            <p class="flow_item__title">3.合否連絡</p>
+                            <p class="flow_item__text">
+                                社内基準にて審査させて頂き１週間以内に合否連絡させて頂きます。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //FLOW -->
+        <!-- INDEX -->
+        <div id="index_block">
+            <div class="index_block__inner">
+                <ul class="index_block__list">
+                    <li class="index_block__item">
+                        <a href="#VOICE">STAFF VOICE</a>
+                    </li>
+                    <li class="index_block__item">
+                        <a href="#DAY">the Day</a>
+                    </li>
+                    <li class="index_block__item">
+                        <a href="#RECRUIT">Recruitment</a>
+                    </li>
+                    <li class="index_block__item">
+                        <a href="#QA">Q & A</a>
+                    </li>
+                    <li class="index_block__item">
+                        <a href="#APPLY">Apply</a>
+                    </li>
+                </ul>
+                <div class="index_block__line">
+                    <a href=""><span>応募・お問い合わせはこちらから</span> </a>
+                </div>
+            </div>
+        </div>
+        <!-- //INDEX -->
 
         <!-- QA -->
         <section id="QA">
@@ -384,31 +595,47 @@
                 <dl>
                     <dt>どのようなお客様が来店されますか？</dt>
                     <dd>
-                        ３０代以上のお客様が多く来店されます。<br />エイジングケアやヘアケアに悩みがある方が多いので同世代のスタイリストだと喜んでいただけます。
+                        サロンコンセプトを大人女性のみにしているので30代半ば〜の優しく穏やかな方が多いです。個性的なスタイルより年齢に合ったヘアケアを希望される方がほとんどです。
                     </dd>
-                    <dt>ミーティングや講習会はありますか？</dt>
+                    <dt>結婚や出産でブランクがありますが大丈夫でしょうか？</dt>
                     <dd>
-                        集まってのミーティングはほぼありません<br />LINEグループなどでの必要な情報共有はしています。新メニューなどの講習会は営業時間内に行います。<br />スタッフ個人の時間を会社が奪うようなことはありません。
+                        もちろん大丈夫です。1年程度のスタイリスト経験があり、3〜5年のブランクがあったスタッフも在籍しています。入店後、その方にあった内容で研修があります。
                     </dd>
-                    <dt>
-                        子供がまだ小さいのですが、働く時間など相談できますか？
-                    </dt>
+                    <dt>新しいお店の技術やメニューが心配です</dt>
                     <dd>
-                        もちろん大丈夫です。パートで働くことも可能ですし、お子様の行事などでもご遠慮なく休めます。<br />お子様の成長に合わせ正社員に切り替える事も出来ます。前例もあるのでご安心ください。<br />曜日や時間などご相談ください。
+                        弊社では２〜３ヶ月に1度、営業時間内に勉強会を行なっています。（パートスタッフも参加できるように午前中です）<br />
+                        みんなが初めてのものや、不安があるものなどを中心にしています。<br />
+                        一緒に楽しく勉強しましょう
                     </dd>
-                    <dt>昇給について詳しく知りたいです</dt>
+                    <dt>パート希望ですが働けますか？</dt>
                     <dd>
-                        売り上げに応じて歩合給を付けています。<br />詳細につきましては見学時に直接お話させていただきます。
+                        週４週〜、５時間〜のシフトをお願いしています。土日どちらかの出勤できる方は優先させて頂いてます。
                     </dd>
-                    <dt>美容師に戻りたいのですがブランクがあるので不安です</dt>
+                    <dt>ノルマはありますか？</dt>
                     <dd>
-                        2年以上のスタイリスト経験がある方なら安心して復帰できる<br />教育システムがあります。カウンセリングとスパ・トリートメントを中心にしっかりフォローします。
+                        美容師としての目指す目標は設定していますが、各店の平均単価が12,000〜15,000円になるように設定してあるので値段を気になさるお客様は来店されません。<br />
+                        来店されたお客様に満足して頂けるよう努力してもらえれば大丈夫です。再来率が著しく低い場合はカウンセリングなど見直しサポートをします。
                     </dd>
-                    <dt>
-                        求人について質問したいことがあります。お話だけ聞く事は可能ですか？
-                    </dt>
+                    <dt>小さな子供がいますが大丈夫ですか？</dt>
                     <dd>
-                        このページのLINE友達追加ボタン、またはお電話で気軽に質問ください。<br />求人担当からお返事させていただきます。見学についても随時受け付けております。
+                        2歳〜小学生のお子さんがいるスタッフも在籍しています。急なお休みも当然あるものだと考えていますし、お子さんの行事なども遠慮なく休めます。<br />
+                        急な休み理由はお子さんだけでなく誰にでもある事なので協力しあっています。
+                    </dd>
+                    <dt>パートから社員になれますか？</dt>
+                    <dd>
+                        正社員登用制度があります。<br />
+                        お子さんの成長に合わせ正社員になったスタッフ、他業種との兼業から正社員になったスタッフなどもいます。
+                    </dd>
+                    <dt>ミーティングや練習会はありますか？</dt>
+                    <dd>
+                        集まってのミーティングはなく連絡事項はLINEグループで完結しています。練習会は営業時間内に行いパートさんが参加する場合は時給をお支払いしています。<br />
+                        スタッフ個人の時間を会社が奪うことはありません。
+                    </dd>
+                    <dt>給料や他の詳細が聞きたいです</dt>
+                    <dd>
+                        お給料は社内規定に沿って基本給に歩合が上乗せになります。総額で大体技術売上の40％<br />
+                        になります。パートの場合も技術売上に対しの歩合時給です。<br />
+                        見学・サロン説明で代表の石井からサロンについてのお話をさせて頂く時間を作り質問もお答えします。即時の面接は受け付けていないのでお気軽に話を聞きに来て下さい。
                     </dd>
                 </dl>
             </div>
@@ -424,18 +651,48 @@
                 <div class="article">
                     <figure>
                         <img
-                            src="/assets/img/owner.jpg"
+                            src="/images/owner.jpg"
                             alt="採用担当"
                             class="owner"
                         />
                         <figcaption>採用担当 石井</figcaption>
                     </figure>
                     <div class="troubleTop">
+                        <h4>1//jour代表メッセージ</h4>
+                        <p>1//jour代表の石井です</p>
                         <p>
-                            お話を聞いてみたいという方、まずはお店で求人担当から説明させて頂きます。（３０分～１時間程度）
+                            独立前は大型サロンの技術責任者として業務後に深夜２時まで教育マニュアルなどの設計をし、独立後もどこに行っても通じるよう指導してきました。
+                        </p>
+                        <p>その中で一つの違和感をずっと感じていました。</p>
+                        <p>
+                            休憩のない営業の後にプライベートを削ってまで培った技術や知識があるのにも関わらず
+                            美容師を続けられずに辞めていく女性スタッフが多い事。
+                            美容学校を卒業する８割が女性であり、女性スタイリストに担当して貰いたいお客様は６割というのにサロンで働き続ける女性スタイリストは少ないのが現状。
                         </p>
                         <p>
-                            お互いの希望、サロンの価値観などお話させて頂き、ご質問をお受けします。<br />面接ではありませんので、お気軽にLINEまたはお電話でお問合せしてください。
+                            『子供の頃からの夢だった』『美容師という仕事が好き』そんな思いは男性より強いのではないでしょうか？
+                        </p>
+                        <p>
+                            出産や子育て、自身の体調の変化や負担、将来の保障や不安など男性より厳しい状況があると思います。
+                        </p>
+                        <p>・家庭と子育てで美容師の仕事は難しい</p>
+                        <p>・復帰したくても子育て中の理解が得られない</p>
+                        <p>・年齢とともに働けるサロンが少ない</p>
+                        <p>
+                            ・続けられていても将来が不安　　　などありませんか？
+                        </p>
+                        <p>
+                            私の考えは、<br />
+                            女性美容師さんが続けやすい、復帰しやすい、体に負担が少ないと思って利用してもらえるよう作った『女性美容師さんのためのヘアサロン』です。
+                        </p>
+                        <p>
+                            今まで培ったスキル・夢だった仕事・好きな美容師を安心して続けられ<br />
+                            楽しく・やりがいを持って働ける場所を提供したい。<br />
+                            同じような悩みを持ち、共感して助け合える環境を作り増やしていきたいと考えています。
+                        </p>
+                        <p>
+                            美容師としてのエイジングに磨きをかけ、オトナ女性の美容師同士で一緒に働きませんか？<br />
+                            先ずはサロン説明をさせて下さい！お問い合わせお待ちしています
                         </p>
                     </div>
                     <table>
@@ -444,7 +701,7 @@
                             <td class="imgbox">
                                 <a href="//lin.ee/U0RCX0w" target="_blank"
                                     ><img
-                                        src="/assets/img/ico_line_qr.png"
+                                        src="/images/ico_line_qr.png"
                                         alt="LINE"
                                         class="qr"
                                 /></a>
@@ -454,7 +711,7 @@
                                     href="//www.instagram.com/1jour_hairworks_ishii/"
                                     target="_blank"
                                     ><img
-                                        src="/assets/img/ico_insta_qr.png"
+                                        src="/images/ico_insta_qr.png"
                                         alt="LINE"
                                         class="qr"
                                 /></a>
@@ -490,13 +747,13 @@
                     <li>
                         <a href="https://1jour.jp/" target="_blank"
                             ><img
-                                src="/assets/img/logo.png"
+                                src="/images/logo.png"
                                 alt="1//jour hairworks"
                         /></a>
                     </li>
                     <li>
                         <img
-                            src="/assets/img/location.jpg"
+                            src="/images/location.jpg"
                             alt="1//jour hairworks"
                         />
                     </li>

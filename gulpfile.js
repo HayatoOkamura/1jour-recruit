@@ -36,19 +36,19 @@ const paths = {
     },
     styles: {
         src: 'src/css/**/*.scss',
-        dest: 'public/assets/css',
+        dest: 'public/css',
     },
     scripts: {
         src: 'src/js/**/*.{js,jsx,ts,tsx}',
-        dest: 'public/assets/js',
+        dest: 'public/js',
     },
     images: {
-        src: 'src/img/**/*.{jpg,jpeg,png,svg,gif}',
-        dest: 'public/assets/img',
+        src: 'src/images/**/*.{jpg,jpeg,png,svg,gif}',
+        dest: 'public/images',
     },
     static: {
         src: 'static/**/*.*',
-        dest: 'public/static',
+        dest: 'public/',
     },
     dist: {},
 };
@@ -182,8 +182,8 @@ const watchFiles = () => {
             deleteAsync(filePath.replace(/src\/css/, paths.styles.dest).replace(/.scss$/, '.css'));
     });
 
-    watch(paths.images.src).on('unlink', (filePath) => deleteAsync(filePath.replace(/src\/img/, paths.images.dest)));
-    watch(paths.images.src).on('change', (filePath) => deleteAsync(filePath.replace(/src\/img/, paths.images.dest)));
+    watch(paths.images.src).on('unlink', (filePath) => deleteAsync(filePath.replace(/src\/images/, paths.images.dest)));
+    watch(paths.images.src).on('change', (filePath) => deleteAsync(filePath.replace(/src\/images/, paths.images.dest)));
     watch(paths.static.src).on('unlink', (filePath) => deleteAsync(filePath.replace(/static/, paths.static.dest)));
     watch(paths.static.src).on('change', (filePath) => deleteAsync(filePath.replace(/static/, paths.static.dest)));
 };

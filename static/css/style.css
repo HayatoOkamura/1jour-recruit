@@ -76,6 +76,11 @@ fieldset {
     border: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+}
+
 body {
     font: 14px/1.9 'Noto Sans JP', Arial, Verdana, 游ゴシック, YuGothic,
         'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo,
