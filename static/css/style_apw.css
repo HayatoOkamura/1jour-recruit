@@ -197,6 +197,15 @@ section h2 span {
 }
 
 /* ーーーーーーーー追加コードーーーーーーーー */
+
+.is-pc {
+    display: block;
+}
+
+.is-sp {
+    display: none;
+}
+
 #mainImg {
     line-height: 0;
 }
@@ -205,9 +214,10 @@ section h2 span {
     object-fit: cover;
     padding: 0;
     margin: 0;
+    width: 100%;
 }
 
-#index_block {
+.index_block {
     background: #fcf7f0;
 }
 
@@ -328,6 +338,7 @@ section h2 span {
 
 .VOICE__contents h4 {
     margin: 0;
+    font-size: 18px;
 }
 
 .VOICE__contents p {
@@ -559,6 +570,10 @@ section h2 span {
     width: 100px;
     height: auto;
 }
+#CONTACT {
+    margin-top: 80px;
+}
+
 #CONTACT .inner {
     font-size: 15px;
 }
@@ -568,14 +583,17 @@ section h2 span {
 #CONTACT .col3 {
     width: 100%;
 }
+#CONTACT .col3 + .col3 {
+    margin-top: 40px;
+}
 #CONTACT .col3 li {
     padding: 0 14px;
 }
 #CONTACT .col3 li:nth-child(1) {
-    width: 26%;
+    width: 33%;
 }
 #CONTACT .col3 li:nth-child(1) img {
-    width: 62%;
+    width: 100%;
     height: auto;
 }
 #CONTACT .col3 li:nth-child(2) {
@@ -593,7 +611,7 @@ a.google {
     display: block;
     margin: 22px 0 -15px 0;
     padding: 16px 50px;
-    background-color: #000;
+    background-color: #5879D6;
     color: #fff;
     text-align: center;
     border-radius: 3px;
@@ -605,6 +623,12 @@ a.google:hover {
 
 @media only screen and (max-width: 800px) {
     /* ーーーーーーーー追加コードーーーーーーーー */
+    .is-pc {
+        display: none;
+    }
+    .is-sp {
+        display: block;
+    }
     section h2 {
         width: 100%;
     }
@@ -612,7 +636,7 @@ a.google:hover {
         width: 100%;
     }
 
-    #index_block {
+    .index_block {
     }
 
     .index_block__inner {
@@ -663,6 +687,10 @@ a.google:hover {
 
     .flow_item {
         width: 100%;
+    }
+
+    .VOICE__contents {
+        flex-direction: column;
     }
 
     /* ーーーーーーーーーーーーーーーーーーー */
@@ -769,9 +797,20 @@ a.google:hover {
     }
     #APPLY figure {
         width: 120px;
+        float: none;
+        margin-left: auto;
+    }
+    #APPLY .article img.owner {
+        margin: 0 0 15px 0;
     }
     #APPLY figcaption {
         width: 120px;
+        position: relative;
+        bottom: auto;
+        right: auto;
+    }
+    #APPLY .troubleTop {
+        width: 100%;
     }
     #CONTACT .col3 li {
         padding: 0;
