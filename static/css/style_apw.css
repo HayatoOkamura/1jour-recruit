@@ -783,6 +783,9 @@ a.google:hover {
         width: 100%;
         margin: 0 auto 20px auto;
     }
+    #CONTACT .col3 + .col3 {
+        margin-top: 70px;
+    }
     #CONTACT .col3 li:nth-child(1) {
         width: 100%;
     }
