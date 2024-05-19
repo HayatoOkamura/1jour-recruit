@@ -222,9 +222,11 @@ section h2 span {
 }
 
 .index_block__inner {
-    width: 80%;
+    width: 100%;
+    max-width: 1080px;
     margin-inline: auto;
     padding: 70px 20px;
+    box-sizing: border-box;
 }
 
 .index_block__list {
@@ -292,8 +294,10 @@ section h2 span {
 }
 
 .job_block {
-    width: 80%;
     margin: 60px auto 0;
+}
+.job_block.showSp {
+    display: none;
 }
 
 .job_block__list {
@@ -303,15 +307,18 @@ section h2 span {
     grid-template-columns: repeat(4, 1fr);
 }
 
+
 .job_block__item {
-    width: 200px;
-    height: 200px;
+    max-width: 200px;
+    width: 100%;
+    aspect-ratio: 1;
     border-radius: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 24px;
+    font-size: 17px;
+
 }
 
 .job_block__item--blue {
@@ -330,6 +337,13 @@ section h2 span {
     background: #ebdcef;
 }
 
+.job_block__text {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+
+
 .VOICE__contents {
     display: flex;
     align-items: center;
@@ -343,6 +357,10 @@ section h2 span {
 
 .VOICE__contents p {
     margin: 15px 0 0;
+}
+
+.VOICE__contents img {
+    margin: 0;
 }
 
 .VOICE__list {
@@ -410,7 +428,7 @@ section h2 span {
 }
 
 #APPLY .troubleTop {
-    width: 60%;
+    width: 80%;
 }
 
 /* ーーーーーーーー//追加コードーーーーーーーー */
@@ -429,7 +447,6 @@ section h2 span {
     padding-bottom: 50px;
 }
 #INTRO .article img {
-    float: right;
     margin: 5px 0 73px 20px;
     height: auto;
 }
@@ -444,6 +461,7 @@ section h2 span {
     background-size: 0.8em;
     padding-left: 1.1em;
 }
+
 /* #INTRO .job {
     width: 100%;
     padding: 1em;
@@ -459,6 +477,26 @@ section h2 span {
     padding-bottom: 5px;
     padding-right: 3em;
 } */
+
+.INTRO_contents {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.INTRO_contents__img {
+    width: 370px;
+}
+
+.INTRO_contents .troubleTop {
+    width: 650px;
+}
+
+.INTRO_contents__img img {
+    width: 100%!important;
+    margin: 0!important;
+}
+
 #VOICE .article video {
     width: 370px;
 }
@@ -640,7 +678,7 @@ a.google:hover {
     }
 
     .index_block__inner {
-        padding: 40px 20px;
+        padding: 30px 20px;
     }
 
     .index_block__list {
@@ -649,11 +687,11 @@ a.google:hover {
     }
 
     .index_block__item {
-        height: 70px;
+        height: 55px;
     }
 
     .index_block__item > a {
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .index_block__line {
@@ -661,7 +699,19 @@ a.google:hover {
     }
 
     .index_block__line > a {
-        font-size: 18px;
+        font-size: 15px;
+    }
+
+    .INTRO_contents {
+        flex-direction: column;
+    }
+
+    .INTRO_contents .troubleTop {
+        width: 100%;
+    }
+
+    .INTRO_contents__img {
+        width: 100%;
     }
 
     .job_block {
@@ -675,10 +725,15 @@ a.google:hover {
         flex-wrap: wrap;
     }
 
+    .job_block__wrapper {
+        width: 200px;
+    }
+
     .job_block__item {
         font-size: 15px;
         width: 120px;
         height: 120px;
+        margin-inline: auto;
     }
 
     .flow_block__list {
@@ -691,6 +746,10 @@ a.google:hover {
 
     .VOICE__contents {
         flex-direction: column;
+    }
+
+    .VOICE__contents img {
+        width: 100%;
     }
 
     /* ーーーーーーーーーーーーーーーーーーー */
@@ -736,11 +795,11 @@ a.google:hover {
     }
     #INTRO .article img {
         width: 100%;
-        margin-bottom: 2em;
+        /* margin-bottom: 2em; */
+        margin: 0;
     }
     #VOICE .article video {
         float: none;
-        margin: 2em 0 2em 0;
         width: 100%;
     }
     #RECRUIT table {
@@ -801,7 +860,7 @@ a.google:hover {
     #APPLY figure {
         width: 120px;
         float: none;
-        margin-left: auto;
+      margin: 5px auto 20px 0;
     }
     #APPLY .article img.owner {
         margin: 0 0 15px 0;
@@ -835,13 +894,14 @@ a.google:hover {
 
     .job_block {
         width: 100%;
-        margin: 60px 0 0 auto;
+        margin: 50px 0 0 auto;
     }
 
     .job_block__list {
         display: grid;
-        gap: 10px;
+        gap: 30px;
         grid-template-columns: repeat(4, 1fr);
+        
     }
 
     .job_block__item {
@@ -854,6 +914,11 @@ a.google:hover {
         justify-content: center;
         text-align: center;
         font-size: 18px;
+    }
+
+
+    .VOICE__contents img {
+        width: 370px!important;
     }
 
     /* ーーーーーーーー//追加コードーーーーーーーー */
@@ -900,6 +965,16 @@ a.google:hover {
     }
     #APPLY figcaption {
         bottom: 13px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .job_block.showPc {
+        display: none;
+    }
+
+    .job_block.showSp {
+        display: grid;
     }
 }
 
