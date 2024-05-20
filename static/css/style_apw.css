@@ -300,6 +300,11 @@ section h2 span {
     display: none;
 }
 
+.job_block__title {
+    font-size: 23px;
+    padding-bottom: 30px;
+}
+
 .job_block__list {
     display: grid;
     justify-content: center;
@@ -559,16 +564,17 @@ section h2 span {
     padding-left: 1.3em;
 }
 #APPLY .article img.owner {
-    margin-right: 0;
+    margin: 0;
     position: relative;
     width: 100%;
     height: auto;
+    float: initial;
 }
 #APPLY figure {
     position: relative;
     width: 150px;
-    float: right;
-    margin: 5px 0 20px 20px;
+    float: initial;
+    margin: 20px 0 5px 0;
 }
 #APPLY figcaption {
     position: absolute;
@@ -591,9 +597,45 @@ section h2 span {
 #APPLY td {
     padding-bottom: 3em;
 }
+#APPLY tr.note {
+    color: #5d5d5d;
+    font-size: 14px;
+}
+
+#APPLY a.line {
+    background: #2abf64;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 40px;
+    transition: opacity 0.3s;
+    font-size: 20px;
+    color: #fff;
+    padding: 20px 20px 20px 50px;
+    display: block;
+    text-decoration: none;
+}
+#APPLY a.line:hover {
+    opacity: 0.8;
+}
+#APPLY a.line > span {
+    position: relative;
+}
+
+#APPLY a.line > span::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: 105%;
+    width: 30px;
+    height: 30px;
+    background: url(../images/ico_line_btn.svg) center center no-repeat;
+    background-size: contain;
+    transform: translateY(-50%);
+}
 #APPLY .imgbox {
-    margin-left: 20px;
-    margin-right: 20px;
+    /* margin-left: 20px;
+    margin-right: 20px; */
     padding-bottom: 0;
 }
 #APPLY .tel {
