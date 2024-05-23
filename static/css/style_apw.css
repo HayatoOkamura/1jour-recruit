@@ -766,38 +766,42 @@ a.google:hover {
     font-size: 15px;
   }
 
-  .INTRO_contents {
+  #INTRO .INTRO_contents {
     flex-direction: column;
   }
 
-  .INTRO_contents .troubleTop {
+  #INTRO .INTRO_contents .troubleTop {
     width: 100%;
   }
 
-  .INTRO_contents__img {
+  #INTRO .INTRO_contents__img {
     width: 100%;
   }
 
-  .job_block {
+  #INTRO #INTRO .job_block {
     margin: 30px auto 0;
     width: 100%;
   }
 
-  .job_block__list {
-    gap: 10px;
+  #INTRO .job_block__list {
+    gap: 30px;
     display: flex;
     flex-wrap: wrap;
   }
 
-  .job_block__wrapper {
+  #INTRO .job_block__wrapper {
     width: 200px;
   }
 
-  .job_block__item {
+  #INTRO .job_block__item {
     font-size: 15px;
     width: 120px;
     height: 120px;
     margin-inline: auto;
+  }
+
+  #INTRO .job_block__text {
+    font-size: 13px;
   }
 
   .flow_block__list {
@@ -830,6 +834,9 @@ a.google:hover {
     padding: 18px 18px 18px 50px;
   }
 
+  #APPLY .troubleTop h4 {
+    margin-bottom: 25px;
+  }
   /* ーーーーーーーーーーーーーーーーーーー */
 
   #content {
