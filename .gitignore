@@ -3,6 +3,7 @@
 /dist/*
 snapshot.json
 yarn-error.log
+/public/
 
 .vscode/*
 !.vscode/settings.json
