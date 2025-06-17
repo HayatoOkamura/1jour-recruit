@@ -1,12 +1,12 @@
 import browserSync from 'browser-sync';
 import pkg from 'gulp';
-const { src, lastRun, dest, watch, series, parallel, Gulp } = pkg;
+const { src, dest, watch, series, parallel } = pkg;
 import gulpif from 'gulp-if';
 import rename from 'gulp-rename';
 import plumber from 'gulp-plumber';
 import notify from 'gulp-notify';
 import imagemin from 'gulp-imagemin';
-import mozjpeg from 'imagemin-mozjpeg';
+import jpegtran from 'imagemin-jpegtran';
 import changed from 'gulp-changed';
 import postcss from 'gulp-postcss';
 import mqpacker from 'css-mqpacker';
@@ -158,12 +158,22 @@ const buildStatic = (done) => {
  * Image
  */
 const Imagemin = (done) => {
-    src(paths.images.src)
-        .pipe(changed(paths.images.dest))
-        .pipe(imagemin([mozjpeg({ quality: 90 })]))
-        .pipe(dest(paths.images.dest))
-    // .pipe(server.stream());
-    done();
+    console.log('Debug: Starting Imagemin task');
+    console.log('Debug: Image source path:', paths.images.src);
+    console.log('Debug: Image destination path:', paths.images.dest);
+    
+    try {
+        src(paths.images.src)
+            .pipe(changed(paths.images.dest))
+            .pipe(dest(paths.images.dest))
+            .on('end', () => {
+                console.log('Debug: Imagemin task completed successfully');
+                done();
+            });
+    } catch (error) {
+        console.error('Debug: Caught error in Imagemin task:', error);
+        done(error);
+    }
 };
 
 const watchFiles = () => {

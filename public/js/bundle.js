@@ -1,4 +1,1 @@
-document.addEventListener("DOMContentLoaded", () => {
-});
-window.addEventListener("load", () => {
-});
+document.addEventListener("DOMContentLoaded",()=>{}),window.addEventListener("load",()=>{});
